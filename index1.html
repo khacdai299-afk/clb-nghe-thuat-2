@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu lạc bộ Nghệ thuật</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #f3e5f5, #ede7f6);
+        }
+
+        header {
+            background: linear-gradient(rgba(74,20,140,0.7), rgba(74,20,140,0.7)),
+                        url('https://images.unsplash.com/photo-1513364776144-60967b0f800f');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background: #4a148c;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffca28;
+        }
+
+        section {
+            background: white;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #4a148c;
+            margin-bottom: 20px;
+            border-left: 5px solid #ffca28;
+            padding-left: 10px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-family: 'Poppins';
+        }
+
+        form button {
+            margin-top: 20px;
+            padding: 14px;
+            width: 100%;
+            background: linear-gradient(to right, #6a1b9a, #8e24aa);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        form button:hover {
+            transform: scale(1.05);
+            background: linear-gradient(to right, #4a148c, #6a1b9a);
+        }
+
+        footer {
+            background: #311b92;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+            section {
+                margin: 20px;
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CÂU LẠC BỘ NGHỆ THUẬT</h1>
+    <p>Nơi kết nối đam mê – Thắp sáng sáng tạo</p>
+</header>
+
+<nav>
+    <a href="#gioithieu">Giới thiệu</a>
+    <a href="#hoatdong">Hoạt động</a>
+    <a href="#dangky">Đăng ký</a>
+    <a href="#lienhe">Liên hệ</a>
+</nav>
+
+<section id="gioithieu">
+    <h2>Giới thiệu</h2>
+    <p>
+        Câu lạc bộ Nghệ thuật là nơi dành cho những bạn trẻ yêu thích hội họa,
+        âm nhạc, diễn xuất và sáng tạo. Chúng tôi tạo ra môi trường thân thiện,
+        truyền cảm hứng và phát triển tài năng.
+    </p>
+</section>
+
+<section id="hoatdong">
+    <h2>Hoạt động chính</h2>
+    <ul>
+        <li>🎨 Vẽ tranh – thiết kế – mỹ thuật sáng tạo</li>
+        <li>🎭 Biểu diễn văn nghệ, múa, kịch</li>
+        <li>🏆 Triển lãm & cuộc thi nghệ thuật</li>
+        <li>🤝 Giao lưu – học hỏi – làm việc nhóm</li>
+    </ul>
+</section>
+
+<section id="dangky">
+    <h2>Đăng ký tham gia CLB</h2>
+    <form>
+        <input type="text" placeholder="Họ và tên" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Lớp">
+        <textarea rows="4" placeholder="Lý do bạn muốn tham gia"></textarea>
+        <button type="submit">✨ Gửi đăng ký ✨</button>
+    </form>
+</section>
+
+<section id="lienhe">
+    <h2>Liên hệ</h2>
+    <p>📧 Email: clbnghethuat@gmail.com</p>
+    <p>📘 Fanpage: Câu lạc bộ Nghệ thuật</p>
+</section>
+
+<footer>
+    <p>© 2026 Câu lạc bộ Nghệ thuật</p>
+</footer>
+
+</body>
+</html>
